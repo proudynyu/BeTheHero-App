@@ -2,6 +2,6 @@
 resumo.md
 
 # DB
-dev.sqlite
-db.sqlite
-test.sqlite
+**.sqlite*
+dev.sqlite3
+test.sqlite3

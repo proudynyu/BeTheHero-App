@@ -1,2 +1,4 @@
 node_modules
-**.sqlite
+**.sqlite*
+dev.sqlite3
+test.sqlite3
