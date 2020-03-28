@@ -2,6 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const routes = require('./routes');
+const { errors } = require('celebrate');
 
 // Instancia do app
 const app = express();
@@ -14,6 +15,7 @@ app.use(express.json());
 
 // usando as rotas do arquivo 'routes.js'
 app.use(routes);
+app.use(errors());
 
 /*
     Rotas / Recursos
@@ -52,4 +54,4 @@ app.use(routes);
 
 
 // Escutando na porta 3333
-app.listen(3333);
+module.exports = app;
